@@ -1,0 +1,20 @@
+{
+  "name": "구름두이노",
+  "version": "0.200",
+  "manifest_version": 2,
+  "description": "goorm EDU arduino extension",
+  "app": {
+    "background": {
+      "scripts": [ "module/module.js" ]
+    }
+  },
+  "externally_connectable": {
+    "matches": ["http://*.goorm.io/*", "https://*.goorm.io/*"]
+  },
+  "permissions": [
+    "serial",
+    "usb",
+    "http://*/",
+    "https://*/"
+  ]
+}
